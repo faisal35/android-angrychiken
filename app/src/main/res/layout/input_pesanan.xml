@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical"
+    tools:context=".InputPesanan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Masukan Pesanan :"
+        android:textStyle="bold"
+        android:textColor="#FF000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30sp">
+
+        <CheckBox
+            android:id="@+id/cbx_glondongan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Ayam Glondongan"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity=""
+                android:onClick="tambah1"
+                android:text="+"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/tv_glondongan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:onClick="kurang1"
+                android:text="-"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbx_kepala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Ayam Kepala"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity=""
+                android:onClick="tambah2"
+                android:text="+"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/tv_kepala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:onClick="kurang2"
+                android:text="-"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cbx_sayap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Ayam Sayap"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity=""
+                android:onClick="tambah3"
+                android:text="+"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/tv_sayap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:onClick="kurang3"
+                android:text="-"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cbx_paha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Ayam Paha"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity=""
+                android:onClick="tambah4"
+                android:text="+"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/tv_paha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:onClick="kurang4"
+                android:text="-"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbx_ceker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:text="Ayam Ceker"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity=""
+                android:onClick="tambah5"
+                android:text="+"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/tv_ceker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:onClick="kurang5"
+                android:text="-"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cbx_jeroan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="Ayam Jeroan"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:paddingRight="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity=""
+                android:onClick="tambah6"
+                android:text="+"
+                tools:ignore="OnClick" />
+
+            <TextView
+                android:id="@+id/tv_jeroan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="0" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:onClick="kurang6"
+                android:text="-"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_getNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:textColor="#FF000000"
+        android:textSize="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="order"
+        android:text="ORDER"
+        android:background="#FF0000FF"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
